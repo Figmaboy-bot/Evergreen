@@ -1,0 +1,1595 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 4.25rem;
+    gap: 2rem;
+}
+
+.menu {
+    display: none;
+}
+
+.navlinks {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.logo :nth-child(1) {
+    width: 12rem;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.outline {
+    background-color: transparent;
+    border: 1px solid #2E8B57;
+    border-radius: 12.5rem;
+    font-size: 0.8rem;
+    color: #2E8B57;
+    font-weight: 500;
+    padding: 1rem 2rem;
+}
+
+
+.outline:hover {
+    background-color: #2E8B57;
+    color: white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.Filled:hover {
+    background-color: transparent;
+    border: 1px solid #2E8B57;
+    color: #2E8B57;
+    cursor: pointer;
+}
+
+
+.Filled {
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    border-radius: 12.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+}
+
+
+
+/* Resposive -navbar */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 1rem 2rem;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+    
+}
+
+
+@media (max-width: 420px) {
+    .navbar {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+    
+}
+
+.header {
+    margin-top: 10rem;
+    margin: 0 4.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.heading-text {
+    font-size: 5rem;
+    font-family: "Bricolage Grotesque", poppins;
+    font-weight: 800;
+    text-align: center; background-color: linear-gradient(0deg, white 30%, #8e909c 100%);
+   /*  color: #2E8B57; */
+    margin-top: 6rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.subheading-text {
+    font-size: 1.5rem;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #666;
+    margin-top: 1rem;
+}
+
+
+.heading-button {
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    border-radius: 12.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+}
+
+
+.heading-button:hover {
+    background-color: transparent;
+    border: 1px solid #2E8B57;
+    color: #2E8B57;
+    cursor: pointer;
+}
+
+.header-pictures {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-left: 4.25rem;
+    margin-right: 4.25rem;
+    margin-top: 4rem;
+}
+
+.header-pictures img {
+    display: flex;
+    width: 24rem;
+    height: 24rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+
+/* Resposive -navbar */
+
+@media (max-width: 768px) {
+
+    .header {
+        margin-top: 5rem;
+        margin: 0 1.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .logosss>img {
+        width: 10rem;
+        height: auto;
+    }
+
+    .heading-text {
+        margin-top: 4rem;
+        font-size: 2.5rem;}
+
+    .subheading-text {
+        font-size: 1rem;}    
+
+    .heading-button {
+            border-radius: 12.5rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 0.75rem 2rem;
+            margin-top: 2rem;
+        } 
+        
+          
+    .header-pictures {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.25rem;
+            margin-left: 2.25rem;
+            margin-right: 2.25rem;
+            margin-top: 4rem;
+        }
+
+
+
+        .header-pictures img {
+            display: block;
+            min-width: 24rem;
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1rem;
+        }    
+}
+
+
+@media (max-width: 420px) {
+
+    .header {
+        margin-top: 5rem;
+        margin: 0 1.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .heading-text {
+        margin-top: 4rem;
+        font-size: 1.5rem;}
+
+    .subheading-text {
+        font-size: 0.7rem;}    
+
+    .heading-button {
+            border-radius: 12.5rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 0.75rem 2rem;
+            margin-top: 2rem;
+        } 
+        
+          
+    .header-pictures {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.25rem;
+            margin-left: 4.25rem;
+            margin-right: 4.25rem;
+            margin-top: 4rem;
+        }
+
+
+
+        .header-pictures img {
+            display: flex;
+            flex: 1;
+            max-width: 100vh;
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1rem;
+        }    
+}
+
+
+
+/* About Us */
+
+.about-us {
+    margin-top: 12.5rem;
+    margin-left: 4.25rem;
+    margin-right: 4.25rem;
+    margin-bottom: 4.25rem;
+    font-family: "Bricolage Grotesque";
+}
+
+.About {
+    color: #091C11;
+    font-family: "Bricolage Grotesque";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.75rem; /* 150% */
+    font-family:  "Bricolage Grotesque", poppins;
+}
+
+
+.three-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 4rem;
+    flex-wrap: nowrap;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.title-and-number {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.375rem;
+}
+
+.number {
+    color: white;
+}
+
+.card-title {
+    color: #FFF;
+    font-family: "Bricolage Grotesque";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+
+
+.card {
+    background-color: #091C11;
+    padding: 2.5rem;
+    font-family: "Bricolage Grotesque";
+    color: #fff;
+    border-radius: 1.25rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.card:nth-child(1) {
+    transform: translateY(0);
+    background-color: #2E8B57;
+}
+
+
+.card:nth-child(2) {
+    transform: translateY(100px);
+}
+.card:nth-child(3) {
+    transform: translateY(200px);
+}
+
+.card-content {
+    color: #FFF;
+    font-family: "Bricolage Grotesque";
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+
+/* Responsive about */
+
+@media (max-width: 768px) {
+    .about-us {
+        margin-top: 6.5rem;
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+        margin-bottom: 2.25rem;
+        font-family: "Bricolage Grotesque";
+    }
+
+
+    .About {
+        font-family: "Bricolage Grotesque";
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.75rem; /* 150% */
+        font-family:  "Bricolage Grotesque", poppins;
+    }
+
+
+    .three-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 3rem;
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        background-color: #091C11;
+        padding: 1.5rem;
+        font-family: "Bricolage Grotesque";
+        color: #fff;
+        border-radius: 1.25rem;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .card:nth-child(1) {
+        transform: translateY(0);
+        background-color: #2E8B57;
+    }
+    
+    
+    .card:nth-child(2) {
+        transform: translateY(0);
+    }
+    .card:nth-child(3) {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Our Products */
+
+.our-products {
+    margin-top: 20rem;
+    margin-left: 4.25rem;
+    margin-right: 4.25rem;
+}
+
+.product-header {
+    font-family: "Bricolage Grotesque";
+    font-weight: 700;
+    color: #091C11;
+    font-size: 4rem;
+}
+
+.product-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-subheading {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.products-button {
+    display: flex;
+    padding: 1rem 2.125rem;
+    align-items: center;
+    background-color: #2E8B57;
+    color: #FFF;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12rem;
+}
+
+.products-button:hover {
+    background-color: transparent;
+    border: 1px solid #2E8B57;
+    color: #2E8B57;
+    cursor: pointer;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+   flex-wrap: nowrap;
+   margin-top: 4rem;
+   gap: 1.25rem;
+}
+
+.carousel-img {
+    width: 31rem;
+    height: 31.25rem;
+    border-radius: 1.25rem;
+    flex: 0 0 auto;
+}
+
+
+.image-title {
+  font-family: "Bricolage Grotesque";
+  position: absolute;
+  font-size: 4rem;
+  color: white;
+  padding-left: 28px;
+  padding-top: 400px;
+}
+
+
+.image-titles{
+  font-family: "Bricolage Grotesque";
+  position: absolute;
+  font-size: 4rem;
+  color: white;
+  padding-left: 28px;
+  padding-top: 320px;
+}
+
+.carousel-image {
+    width: 100%;
+    border-radius: 1.25rem;
+}
+
+.carousel-more {
+    position: absolute;
+    margin-top: 2.5rem;
+    margin-left: 410px;
+}
+
+.control-indicator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.indicator {
+    width: 500px;
+    display: flex;
+    padding: 1.5rem 2rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 125rem;
+    background: rgba(46, 139, 87, 0.10);
+}
+
+.indicators {
+    width: 5rem;
+    height: 0.5rem;
+    border-radius: 1.25rem;
+    background: #FFF;
+}
+
+.indicators:nth-child(1) {
+    width: 5rem;
+    height: 0.5rem;
+    border-radius: 1.25rem;
+    background: #2E8B57;
+}
+
+
+/* Responsive Our Product */
+
+@media (max-width: 768px) {
+
+    .our-products {
+        margin-top: 14rem;
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+    }
+
+    .product-header {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    
+    .product-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .product-subheading {
+        width: 100%;
+        flex-shrink: 0;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        font-weight: 400;
+        margin-top: 2rem;
+    }
+    
+    .products-button {
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        padding: 0.8rem 1.7rem;
+        font-size: 0.8rem;
+    }
+
+    .carousel {
+        display: flex;
+        flex-direction: row;
+         flex-wrap: nowrap;
+         margin-top: 4rem;
+         gap: 1.25rem;
+      }
+      
+      .carousel-img {
+          width: 31rem;
+          height: 31.25rem;
+          border-radius: 1.25rem;
+          flex: 0 0 auto;
+          display: none;
+      }
+
+      .carousel :nth-child(1) {
+        display: block;
+        width: 100%;
+      }
+      
+      .image-title{
+        font-size: 3rem;
+        padding-left: 28px;
+        padding-top: 280px;
+      }
+      
+      .carousel-image {
+          width: 100%;
+          border-radius: 1.25rem;
+      }
+      
+      .carousel-more {
+          position: absolute;
+          margin-top: 2rem;
+          margin-left: 280px;
+      }
+      
+      .control-indicator {
+          margin-top: 1rem;
+          gap: 1rem;
+      }
+      
+      .indicator {
+          width: 100%;
+          display: flex;
+          padding: 1rem 1.5rem;
+          flex-direction: row;
+          align-items: center;
+          gap: 0.625rem;
+          border-radius: 125rem;
+          background: rgba(46, 139, 87, 0.10);
+      }
+      
+      .indicators {
+          width: 2rem;
+          height: 0.5rem;
+          border-radius: 1.25rem;
+          background: #FFF;
+      }
+      
+      .indicators:nth-child(1) {
+          width: 2rem;
+          height: 0.5rem;
+          border-radius: 1.25rem;
+          background: #2E8B57;
+      }
+
+      .Next, .prev {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+      
+}
+
+
+@media (max-width: 420px) {
+
+    .our-products {
+        margin-top: 8rem;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    .product-header {
+        font-weight: 700;
+        color: #091C11;
+        font-size: 4rem;
+    }
+    
+    .product-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .product-subheading {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        font-weight: 400;
+        color: #666;
+    }
+    
+    .products-button {
+        display: flex;
+        padding: 1rem 2.125rem;
+        align-items: center;
+        background-color: #2E8B57;
+        color: #FFF;
+        font-size: 1rem;
+        border: none;
+        border-radius: 12rem;
+    }
+}
+
+
+
+/* tour */
+
+.tour {
+ background-color: #091C11; 
+ padding-bottom: 6.25rem;  
+}
+
+.tour-header {
+    font-family: "Bricolage Grotesque";
+    font-weight: 700;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.tour-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4.25rem;
+    margin-right: 4.25rem;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+    padding-top: 6.25rem;
+}
+
+.tour-subheading {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: 400;
+    color: #DADADA;
+}
+
+.tour-button {
+    display: flex;
+    padding: 1rem 2.125rem;
+    align-items: center;
+    background-color: #2E8B57;
+    color: #FFF;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12rem;
+}
+
+
+.tour-button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+
+.tour-image {
+    display: flex;
+    height: auto;
+    margin-left: 4.25rem;
+    margin-right: 4.25rem;
+    padding-top: 1.25rem;
+}
+
+.farm-image {
+    width: 100%;
+    height: 31.25rem;
+    border-radius: 1.25rem;
+    object-fit: cover;
+}
+
+.farm-details {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Bricolage Grotesque";
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 2.5rem;
+}
+
+.farm-name {
+    margin-right: 700px;
+    font-family: "Bricolage Grotesque";
+}
+
+
+/* Tour responsive */
+
+@media (max-width: 768px) {
+    .tour {
+        background-color: #091C11; 
+        padding-bottom: 2.25rem;  
+       }
+       
+       .tour-header {
+           font-family: "Bricolage Grotesque";
+           font-weight: 700;
+           color: #fff;
+           font-size: 3rem;
+       }
+       
+       .tour-heading {
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           margin-left: 1.25rem;
+           margin-right: 1.25rem;
+           margin-top: 1.25rem;
+           margin-bottom: 1.25rem;
+           padding-top: 1.25rem;
+       }
+       
+       .tour-subheading {
+           font-size: 1rem;
+           gap: 1.5rem;
+           font-weight: 400;
+           color: #DADADA;
+           margin-top: 2rem;
+       }
+       
+       .tour-button {
+           padding: 0.5rem 2rem;
+           white-space: nowrap;
+           font-size: 0.85rem;
+       }
+       
+       
+       .tour-image {
+           display: flex;
+           height: auto;
+           margin-left: 1.25rem;
+           margin-right: 1.25rem;
+           padding-top: 1.25rem;
+       }
+       
+       .farm-image {
+           width: 100%;
+           height: 25rem;
+           border-radius: 1.25rem;
+           object-fit: cover;
+       }
+       
+       .farm-details {
+           white-space: nowrap;
+           font-size: 3rem;
+           color: white;
+           position: absolute;
+           margin-top: 330px;
+           margin-left: 1.5rem;
+       }
+       
+       .farm-name {
+           margin-right: 700px;
+           font-family: "Bricolage Grotesque";
+       }
+}
+
+
+
+/* Blogs */
+
+.blogs-header {
+    font-family: "Bricolage Grotesque";
+    font-weight: 700;
+    color: #091C11;
+    font-size: 4rem;
+}
+
+.blogs-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4.25rem;
+    margin-right: 4.25rem;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+    padding-top: 6.25rem;
+}
+
+.blogs-subheading {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.blogs-button {
+    display: flex;
+    padding: 1rem 2.125rem;
+    align-items: center;
+    background-color: #2E8B57;
+    color: #FFF;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12rem;
+}
+
+.blogs-button:hover {
+    background-color: transparent;
+    border: 1px solid #2E8B57;
+    color: #2E8B57;
+    cursor: pointer;
+}
+
+.blog-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.all {
+    width: 80px;
+    color: #2E8B57;
+    border-bottom: 2px solid #2E8B57;
+}
+
+.mainblogs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4.25rem;
+    margin-right: 4.25rem;
+}
+
+
+
+.four-blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.two-blogs {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.blog-img {
+    display: flex;
+    width: 24rem;
+    height: 24rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+}
+
+.blog-img2 {
+    display: flex;
+    width: 24rem;
+    height: 32rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+}
+
+.blog-title {
+    color: #091C11;
+    width: 24rem;
+    font-family: "Bricolage Grotesque";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.125rem;
+    margin-top: 2rem;
+}
+
+.blog-subheading {
+    color: #666;
+    width: 24rem;
+    font-family: Poppins;
+    font-size: 1.05rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem; 
+}
+
+.Link {
+    text-decoration: none;
+    color: #2E8B57;
+    border-bottom: 2px solid #2E8B57;
+    margin-top: 1.25rem;
+    display: flex;
+    gap: 1rem;
+    width: 130px;
+    white-space: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.Link:hover {
+    color: #0F2E1D;
+    border-bottom: 2px solid #0F2E1D;
+}
+
+.green-arrow {
+    display: block;
+}
+
+.Link:hover .green-arrow {
+    display: none;
+}
+
+.Link:hover .second-arrow {
+    display: block;
+}
+
+.second-arrow {
+    display: none;
+    /* transform: rotate(90deg); */
+    /* width: 40px; */
+}
+
+.blog-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+
+/* Blog Responsive */
+
+@media (max-width: 768px) {
+    .blogs-header {
+        font-size: 3rem;
+    }
+    
+    .blogs-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding-top: 4rem;
+    }
+    
+    .blogs-subheading {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        font-weight: 400;
+        color: #666;
+    }
+    
+    .blogs-button {
+        display: flex;
+        padding: 1rem 2.125rem;
+        align-items: center;
+        background-color: #2E8B57;
+        color: #FFF;
+        font-size: 0.85rem;
+        white-space: nowrap;
+        border: none;
+        border-radius: 12rem;
+    }
+    
+    .blog-sections {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        font-size: 1rem;
+    }
+    
+    .all {
+        width: 80px;
+        color: #2E8B57;
+        border-bottom: 2px solid #2E8B57;
+    }
+    
+    .mainblogs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+    
+    .four-blogs {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    
+    .two-blogs {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    
+    .blog-img {
+        display: flex;
+        width: 100%;
+        height: 32rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.25rem;
+    }
+    
+    .blog-img2 {
+        display: flex;
+        width: 100%;
+        height: 32rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.25rem;
+    }
+    
+    .blog-title {
+        color: #091C11;
+        width: 24rem;
+        font-family: "Bricolage Grotesque";
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.125rem;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    
+    .blog-subheading {
+        color: #666;
+        width: 24rem;
+        font-family: Poppins;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.75rem;
+        margin-bottom: 1.5rem; 
+        width: 100%;
+    }
+    
+    .Link {
+        text-decoration: none;
+        color: #2E8B57;
+        border-bottom: 1px solid #2E8B57;
+        margin-top: 1.25rem;
+        display: flex;
+        gap: 1rem;
+        width: 130px;
+    }
+    
+    .blog-details {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
+
+
+/* Newsletter */
+
+.newsletter {
+    background-color: #091C11;
+}
+
+.input-details {
+    margin-top: 6.5rem;
+    margin-bottom: 6.5rem;
+    padding: 6.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-header {
+    color: #FFF;
+    text-align: center;
+    font-family: "Bricolage Grotesque";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.email {
+    display: flex;
+height: 4.25rem;
+padding: 1rem 1rem 1rem 1.5rem;
+justify-content: center;
+align-items: center;
+gap: 16.25rem;
+width: 500px;
+border: none;
+border-radius: 12rem;
+}
+
+
+.Subscribe {
+    position: absolute;
+    background-color: #2E8B57;
+    font-family: poppins;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    margin-left: 20rem;
+    margin-top: 0.6rem;
+    border-radius: 12rem;
+    color: #FFF;
+}
+
+.Subscribe:hover {
+    background-color: transparent;
+    border: 1px solid #2E8B57;
+    color: #2E8B57;
+    cursor: pointer;
+}
+
+/* Responsive Newsletter */
+
+@media (max-width: 768px) {
+    
+    .input-details {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding: 1.5rem;
+    }
+    
+    .newsletter-header {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .email {
+        display: flex;
+    height: 3.25rem;
+    padding: 1rem 1rem 1rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 16.25rem;
+    width: 500px;
+    border: none;
+    border-radius: 12rem;
+    }
+    
+    
+    .Subscribe {
+        position: absolute;
+        background-color: #2E8B57;
+        font-family: poppins;
+        border: none;
+        width: 8rem;
+        height: 2.5rem;
+        margin-left: 22.5rem;
+        margin-top: 0.4rem;
+    }
+}
+
+
+
+/* Footer */
+
+.footer {
+    margin: 4.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-text {
+    color: #666;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem;
+    width: 20.8125rem;
+}
+
+.join-us {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem 1.25rem;
+    background-color: #2E8B57;
+    gap: 1.5rem;
+    color: #FFF;
+    border: none;
+    border-radius: 12.5rem;
+    color: #FFF;
+    line-height: 1.25rem;
+    margin-top: 2.5rem;
+}
+
+.green {
+    display: none;
+}
+
+.join-us:hover .green {
+    display: block;
+}
+
+.join-us:hover .white {
+    display: none;
+}
+
+.join-us:hover {
+    background-color: transparent;
+    border: 1px solid #2E8B57;
+    color: #2E8B57;
+    cursor: pointer;
+}
+
+
+
+.second-section {
+    display: flex;
+    gap: 2rem;
+}
+
+.Footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.all-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.link-header {
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem; 
+}
+
+.The-link {
+    color: #666;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 120% */
+}
+
+.copyright {
+    margin: 4.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem;
+}
+
+.privacy{
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.down-logo >img{
+    width: 100%;
+    margin-bottom: 4.25rem;
+}
+
+.back-to-top {
+    position: absolute;
+    margin-top: -12.8rem;
+    margin-left: 64rem;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+    display: inline-flex;
+    padding: 1rem 1.25rem;
+    align-items: center;
+    gap: 1.75rem;display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 12.5rem;
+    background: #0F2E1D;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Responsive Footer */
+
+@media (max-width: 768px) {
+    .footer {
+        margin: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .logo-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .footer-text {
+        font-size: 0.85rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.275rem;
+        width: 100%;
+    }
+    
+    .join-us {
+        padding: 0.5rem 0.7rem;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        gap: 0.85rem;
+        margin-top: 1.5rem;
+        font-size: 0.75rem;
+    }
+    
+    .second-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .Footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    
+    .all-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    
+    .link-header {
+        font-size: 1rem;
+    }
+    
+    .The-link {
+        font-size: 0.85rem;
+    }
+    
+    .copyright {
+        margin: 3.25rem;
+        display: grid;
+        grid-template-columns: auto;
+        justify-self: center;
+        align-self: center;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .copyright>p {
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .privacy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+   /*  .down-end {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    } */
+    
+    .down-logo >img{
+        width: 100%;
+        margin-bottom: 2.25rem;
+    }
+    
+    .back-to-top {
+        position:static;
+        margin-top: 2rem;
+        font-size: 0.85rem;
+        display: flex;
+        flex-shrink: 0;
+        padding: 0.625rem 1rem;
+        align-items: center;
+        gap: 1.75rem;
+        justify-content: center;
+        align-content: center;
+    }
+}
