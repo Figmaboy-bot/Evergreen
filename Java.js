@@ -1,48 +1,61 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const carousel = document.querySelector('.carousel');
-  const container = carousel.querySelector('.carousel-container');
-  const items = carousel.querySelectorAll('.carousel-img');
-  const indicators = carousel.querySelectorAll('.indicators');
-  const prevButton = carousel.querySelector('.prevs');
-  const nextButton = carousel.querySelector('.Nexts');
+    const carousel = document.querySelector('.carousel');
+    const container = carousel.querySelector('.carousel-container');
+    const items = carousel.querySelectorAll('.carousel-img');
+    const indicators = carousel.querySelectorAll('.indicators');
+    const prevButton = carousel.querySelector('.prevs');
+    const nextButton = carousel.querySelector('.Nexts');
 
-  let currentIndex = 0;
-  const itemsPerSlide = 2.5; // Show 2.5 items per slide
-  const totalSlides = items.length - Math.floor(itemsPerSlide) + 1; // Adjust total slides calculation
+    let currentIndex = 0;
+    let itemsPerSlide = 2.5; // Default for desktop
 
-  function updateCarousel() {
-      const offset = currentIndex * (100 / itemsPerSlide);
-      container.style.transform = `translateX(calc(-${offset}% - ${currentIndex}rem))`;
-      indicators.forEach((indicator, index) => {
-          indicator.classList.toggle('active', index === currentIndex);
-      });
-  }
+    function updateItemsPerSlide() {
+        if (window.innerWidth <= 768) {
+            itemsPerSlide = 1; // Show only one image on mobile
+        } else {
+            itemsPerSlide = 2.5; // Show 2.5 images on desktop
+        }
+    }
 
-  function nextSlide() {
-      currentIndex = (currentIndex + 1) % totalSlides;
-      updateCarousel();
-  }
+    function updateCarousel() {
+        updateItemsPerSlide();
+        const totalSlides = items.length - Math.floor(itemsPerSlide) + 1;
+        const offset = currentIndex * (100 / itemsPerSlide);
+        container.style.transform = `translateX(calc(-${offset}% - ${currentIndex * (window.innerWidth <= 768 ? 0 : 1)}rem))`;
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentIndex);
+        });
+    }
 
-  function prevSlide() {
-      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-      updateCarousel();
-  }
+    function nextSlide() {
+        updateItemsPerSlide();
+        const totalSlides = items.length - Math.floor(itemsPerSlide) + 1;
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+    }
 
-  nextButton.addEventListener('click', nextSlide);
-  prevButton.addEventListener('click', prevSlide);
+    function prevSlide() {
+        updateItemsPerSlide();
+        const totalSlides = items.length - Math.floor(itemsPerSlide) + 1;
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    }
 
-  indicators.forEach((indicator, index) => {
-      indicator.addEventListener('click', () => {
-          currentIndex = index;
-          updateCarousel();
-      });
-  });
+    nextButton.addEventListener('click', nextSlide);
+    prevButton.addEventListener('click', prevSlide);
 
-  // Initial setup
-  updateCarousel();
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            currentIndex = index;
+            updateCarousel();
+        });
+    });
 
-  // Update layout on window resize
-  window.addEventListener('resize', updateCarousel);
+    // Initial setup
+    updateCarousel();
+
+    // Update layout on window resize
+    window.addEventListener('resize', updateCarousel);
 });
 
 document.addEventListener('DOMContentLoaded', function() {
